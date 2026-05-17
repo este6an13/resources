@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <meta name="description" content="A curated collection of insightful articles, tools, and websites.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <h1>Resources</h1>
+                <p>A collection of interesting links, articles, and websites.</p>
+            </div>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme"
+                style="margin-top: 0.5rem; padding: 0.5rem;">
+                <svg id="theme-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Admin Management (Hidden by default) -->
+        <div id="admin-management" style="display: none; text-align: center; margin-bottom: 2rem;">
+            <a href="add.html" class="primary-btn" style="text-decoration: none; display: inline-block;">+ Add New
+                Resource</a>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search resources..." autocomplete="off">
+            <div class="tags-container" id="tags-container">
+                <!-- Tags will be dynamically injected here -->
+            </div>
+        </div>
+
+        <main class="resources-list" id="resources-list">
+            <!-- List items will be dynamically injected here -->
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Resources</p>
+        </footer>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
